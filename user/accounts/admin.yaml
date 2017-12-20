@@ -1,0 +1,11 @@
+email: gooddha@ya.ru
+fullname: Admin
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$EGd.rVP81rulZ9jtNsjK9OiQmLqV8BtIRRgbzGHLEr67SqfGxVnmu
