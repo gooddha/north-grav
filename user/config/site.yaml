@@ -1,6 +1,20 @@
-title: ОЛЦ Северный
+title: 'ОЛЦ Северный'
+default_lang: ru
 author:
-  name: Andrey Adamovich
-  email: 'gooddha@ya.ru'
+  name: 'Andrey Adamovich'
+  email: gooddha@ya.ru
+taxonomies:
+  - category
+  - tag
 metadata:
-    description: 'Официальный сайт оздоровительно-лечебного центра-пансионата Северный'
+  description: 'Официальный сайт оздоровительно-лечебного центра-пансионата Северный'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog
+phones:
+  mobile: '+7 (978) 404-30-00'
+  city: ''

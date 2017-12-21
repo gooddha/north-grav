@@ -185,7 +185,7 @@ main {
 }
 
 .bottom-pano {
-  background-image: url(../img/bottom-pano.png);
+  background-image: url(../images/bottom-pano.png);
   height: 400px;
   background-size: cover;
   position: absolute;
@@ -255,7 +255,7 @@ main {
 .yandex-map {
   width: 800px;
   height: 620px;
-  background-image: url(../img/map-background.jpg);
+  background-image: url(../images/map-background.jpg);
 }
 
 footer {

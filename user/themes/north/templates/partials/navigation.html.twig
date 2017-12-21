@@ -7,7 +7,7 @@
                     {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
                     {{ p.menu }}
                 </a>
-                <ul>
+                <ul class="submenu">
                     {{ _self.loop(p) }}
                 </ul>
             </li>
@@ -22,7 +22,7 @@
     {% endfor %}
 {% endmacro %}
 
-<ul>
+<ul class="menu">
     {% if theme_config.dropdown.enabled %}
         {{ _self.loop(pages) }}
     {% else %}

@@ -16,8 +16,8 @@
 
     {% block stylesheets %}
         {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %}
-        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
-        {% do assets.addCss('theme://css/custom.css', 98) %}
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}        
+        {% do assets.addCss('theme://css/style.css', 98) %}
     {% endblock %}
     {{ assets.css() }}
 
@@ -31,35 +31,34 @@
 <body id="top" class="{{ page.header.body_classes }}">
 
 {% block header %}
-    <div class="header">
-        <div class="wrapper padding">
-            <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
-                <i class="fa fa-rebel"></i>
-                {{ config.site.title }}
-            </a>
-            {% block header_navigation %}
-            <nav class="main-nav">
-                {% include 'partials/navigation.html.twig' %}
-            </nav>
-            {% endblock %}
-        </div>
-    </div>
+    <header>        
+        {# <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">             #}
+            <div class="header-logo">{{ config.site.title }}</div>
+        {# </a> #}
+        {% block header_navigation %}
+        <nav class="main-nav">
+            {% include 'partials/navigation.html.twig' %}
+        </nav>
+        {% endblock %}
+        <div class="phone">{{ site.phones.mobile }}</div>        
+    </header>
 {% endblock %}
 
 {% block body %}
-    <section id="body">
-        <div class="wrapper padding">
-        {% block content %}{% endblock %}
-        </div>
-    </section>
+
+    <div class="wrapper">
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
 {% endblock %}
 
 {% block footer %}
-    <div class="footer text-center">
-        <div class="wrapper padding">
-            <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.rockettheme.com">RocketTheme</a>.</p>
-        </div>
-    </div>
+    <footer>
+        <div class="bottom-pano"></div>
+        <div class="copyright">© Оздоровительно-лечебный центр-пансионат "Северный" – 2017</div>
+    </footer>
 {% endblock %}
 
 {% block bottom %}
