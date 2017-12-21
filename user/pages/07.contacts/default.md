@@ -4,6 +4,10 @@ title: Контакты
 
 # Контактная информация
 
+<div class="yandex-map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6a4ff62084847247ddd47b41b5a4d0b557a6bea94b10c3a843d699b43182592a&amp;width=800&amp;height=620&amp;lang=ru_RU&amp;scroll=true"></script>
+</div>
+
 ## Адрес:
 
 Оздоровительно-лечебный центр «Северный» располагается в экологически чистейшем районе Крымского полуострова – в его западной части, городе-курорте Евпатория. Адрес: Россия, Крым, г. Евпатория, пгт. Заозерное, ул. Аллея Дружбы, 66

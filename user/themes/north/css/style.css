@@ -35,7 +35,11 @@ p {
 .header-logo,
 .phone {
   width: 250px;
-  padding: 10px;
+  padding: 10px;  
+}
+
+.phone {
+  text-align: right;
 }
 
 nav {
