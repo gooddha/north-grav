@@ -159,6 +159,11 @@ main {
   /*height: 2000px;*/
 }
 
+main ul {
+  text-align: left;
+  font-size: 24px;
+}
+
 .logo {
   filter: drop-shadow(0 0 136px white);
   filter: drop-shadow(0 0 4px white);
@@ -173,30 +178,35 @@ main {
   text-shadow: 0 0 10px black, 0 0 20px black;
   color: #b1daf3;
   text-align: center;
-  /*animation: colorchange 5s infinite linear;*/
 }
 
 .subtitle {
   text-align: center;
 }
 
-@keyframes colorchange {
-    0%  {color: #c5dae6;}
-    25% {color: #c5e6c5;}
-    50% {color: #e6e5c5;}
-    75% {color: #e6c5c5;}
-    100%{color: #d5c5e6;}
+.prices table, th, td {
+  border: 1px dotted black;
+  font-family: sans-serif;  
 }
 
-.bottom-pano {
-  background-image: url(../images/bottom-pano.png);
-  height: 400px;
-  background-size: cover;
-  position: absolute;
-  bottom: 100%;
-  width: 100%;
-  z-index: -1;
+.prices main {
+  max-width: 70%;
+
 }
+
+.prices th, td {
+  padding: 5px;
+  width: 140px;
+}
+
+.prices tbody tr:hover {
+  background-color: darkgreen;
+}
+
+.prices tbody td:hover {
+  background-color: green;
+}
+
 
 .gallery img {
   border: 5px solid white;
@@ -260,6 +270,16 @@ main {
   width: 800px;
   height: 620px;
   background-image: url(../images/map-background.jpg);
+}
+
+.bottom-pano {
+  background-image: url(../images/bottom-pano.png);
+  height: 400px;
+  background-size: cover;
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 footer {
