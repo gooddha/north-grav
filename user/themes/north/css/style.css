@@ -35,7 +35,7 @@ p {
 .header-logo,
 .phone {
   width: 250px;
-  padding: 10px;  
+  padding: 10px;
 }
 
 .phone {
@@ -113,6 +113,10 @@ nav ul:after {
   float: none;
 }
 
+.menu .selected {
+  border-bottom: 1px solid white;
+}
+
 .order-btn {
   position: absolute;
   left: 50%;
@@ -136,7 +140,8 @@ nav ul:after {
 }
 
 .wrapper {
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   min-height: 80vh;
 }
 
@@ -184,9 +189,17 @@ main ul {
   text-align: center;
 }
 
+main {
+  overflow: hidden;
+}
+
+.prices table {
+  overflow-y: scroll;
+}
+
 .prices table, th, td {
   border: 1px dotted black;
-  font-family: sans-serif;  
+  font-family: sans-serif;
 }
 
 .prices main {

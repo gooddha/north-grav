@@ -9,3 +9,5 @@ access:
   site:
     login: true
 hashed_password: $2y$10$EGd.rVP81rulZ9jtNsjK9OiQmLqV8BtIRRgbzGHLEr67SqfGxVnmu
+authorized: true
+twofa_secret: UHGTYL6WAEZHT75QDNZPDXYDFXECI4CA
