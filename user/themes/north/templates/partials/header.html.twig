@@ -1,7 +1,7 @@
 {% block header %}
     <header>
 
-        <a class="header-home-link" href="{{ base_url == '' ? '/' : base_url }}">
+        <a class="header-home-link" title="На главную" href="{{ base_url == '' ? '/' : base_url }}">
           <img class="logo" src="{{ url('theme://images/logo.svg') }}">
           <div class="header-logo">
             {{ config.site.title }}
@@ -15,7 +15,7 @@
         {% endblock %}
 
         <div class="phone">
-          <a href="tel:{{ site.phones.mobile }}">{{ site.phones.mobile }}</a>
+          <a title="Позвонить {{ site.phones.mobile }}" href="tel:{{ site.phones.mobile }}">{{ site.phones.mobile }}</a>
         </div>
 
     </header>
