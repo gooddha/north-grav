@@ -16,7 +16,7 @@
 
     {% block stylesheets %}
         {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %}
-        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}        
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
         {% do assets.addCss('theme://css/style.css', 98) %}
     {% endblock %}
     {{ assets.css() }}
@@ -30,19 +30,8 @@
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
 
-{% block header %}
-    <header>        
-        {# <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">             #}
-            <div class="header-logo">{{ config.site.title }}</div>
-        {# </a> #}
-        {% block header_navigation %}
-        <nav class="main-nav">
-            {% include 'partials/navigation.html.twig' %}
-        </nav>
-        {% endblock %}
-        <div class="phone">{{ site.phones.mobile }}</div>        
-    </header>
-{% endblock %}
+
+{% include 'partials/header.html.twig' %}
 
 {% block body %}
 

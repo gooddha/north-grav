@@ -1,0 +1,13 @@
+{% block header %}
+    <header>
+        {# <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">             #}
+            <a class="header-home-link" href="{{ base_url == '' ? '/' : base_url }}"><div class="header-logo">{{ config.site.title }}</div></a>
+        {# </a> #}
+        {% block header_navigation %}
+        <nav class="main-nav">
+            {% include 'partials/navigation.html.twig' %}
+        </nav>
+        {% endblock %}
+        <div class="phone">{{ site.phones.mobile }}</div>
+    </header>
+{% endblock %}
