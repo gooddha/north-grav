@@ -1,13 +1,22 @@
 {% block header %}
     <header>
-        {# <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">             #}
-            <a class="header-home-link" href="{{ base_url == '' ? '/' : base_url }}"><div class="header-logo">{{ config.site.title }}</div></a>
-        {# </a> #}
+
+        <a class="header-home-link" href="{{ base_url == '' ? '/' : base_url }}">
+          <img class="logo" src="{{ url('theme://images/logo.svg') }}">
+          <div class="header-logo">
+            {{ config.site.title }}
+          </div>
+        </a>
+
         {% block header_navigation %}
-        <nav class="main-nav">
-            {% include 'partials/navigation.html.twig' %}
-        </nav>
+          <nav class="main-nav">
+              {% include 'partials/navigation.html.twig' %}
+          </nav>
         {% endblock %}
-        <div class="phone">{{ site.phones.mobile }}</div>
+
+        <div class="phone">
+          <a href="tel:{{ site.phones.mobile }}">{{ site.phones.mobile }}</a>
+        </div>
+
     </header>
 {% endblock %}

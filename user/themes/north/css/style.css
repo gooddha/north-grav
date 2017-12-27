@@ -31,9 +31,19 @@ p {
   text-align: left;
 }
 
-.header-home-link {
+.header-home-link, .phone a {
   color: inherit;
   text-decoration: none;
+}
+
+.header-home-link img {
+  width: 35px;
+  float: left;
+  padding: 5px;
+}
+
+.header-home-link:hover img {
+  transform: scale(1.5);
 }
 
 
