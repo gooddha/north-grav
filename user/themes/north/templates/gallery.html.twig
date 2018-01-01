@@ -1,5 +1,17 @@
 {% extends 'partials/base.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    {% do assets.addCss('theme://css/featherlight.css', 98) %}
+    {% do assets.addCss('theme://css/featherlight.gallery.css', 98) %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% do assets.addJs('theme://js/featherlight.js', 100) %}
+    {% do assets.addJs('theme://js/featherlight.gallery.js', 100) %}
+{% endblock %}
+
 {% block body %}
 
     <div class="wrapper gallery">
