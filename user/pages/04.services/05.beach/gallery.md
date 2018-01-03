@@ -2,6 +2,9 @@
 title: Пляж
 metadata:
   description: 'ОЛЦ-пансионат Северный располагает собственным песчаный пляж с навесами, душевыми и туалетами. Расстояние 400 м от корпусов, 10 минут ходьбы. Рядом есть кафе, киоски. Прокат пляжного инвентаря (зонты,пляжное покрывало, детские песочные наборы, круги и пр.) предварительно оформляется в пансионате. Бесплатно предоставляются деревянные шезлонги под навесами, они зафиксированы. На пляже есть волейбольная площадка, отдельные места для курения, раздевалки. Работают матросы-спасатели, дежурная медсестра. Пляж предназначен только для наших отдыхающих.'
+twig_first: true
+process:
+    twig: true
 ---
 
 #Пляж
@@ -9,14 +12,19 @@ metadata:
 ОЛЦ-пансионат "Северный" располагает собственным песчаным пляжем площадью 0,8 Га с навесами, душевыми, туалетами, питьевыми фонтанчиками.
 
 <div data-featherlight-gallery data-featherlight-filter="a">
-    <a href="beach/beach1.jpg"> <img width=150 height=150 src="beach/thumbs/beach1.jpg" /></a>
+
+    {% for image in page.media.images %}
+        <a href="{{ image.url }}"> {{ image.cropZoom(200, 150) }} </a>       
+    {% endfor %}
+
+    <!-- <a href="beach/beach1.jpg"> <img width=150 height=150 src="beach/thumbs/beach1.jpg" /></a>
     <a href="beach/beach2.jpg"> <img width=150 height=150 src="beach/thumbs/beach2.jpg" /></a>
     <a href="beach/beach3.jpg"> <img width=150 height=150 src="beach/thumbs/beach3.jpg" /></a>
     <a href="beach/beach4.jpg"> <img width=150 height=150 src="beach/thumbs/beach4.jpg" /></a>
     <a href="beach/beach5.jpg"> <img width=150 height=150 src="beach/thumbs/beach5.jpg" /></a>
     <a href="beach/beach6.jpg"> <img width=150 height=150 src="beach/thumbs/beach6.jpg" /></a>
     <a href="beach/beach7.jpg"> <img width=150 height=150 src="beach/thumbs/beach7.jpg" /></a>    
-    <a href="beach/beach8.jpg"> <img width=150 height=150 src="beach/thumbs/beach8.jpg" /></a>    
+    <a href="beach/beach8.jpg"> <img width=150 height=150 src="beach/thumbs/beach8.jpg" /></a>     -->
 </div>
 
 Расстояние 400 м от корпусов, 10 минут ходьбы. Рядом есть кафе, киоски. Прокат пляжного инвентаря (зонты,пляжное покрывало, детские песочные наборы, круги и пр.) предварительно оформляется в пансионате. Бесплатно предоставляются деревянные шезлонги под навесами, они зафиксированы.
