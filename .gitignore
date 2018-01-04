@@ -1,4 +1,7 @@
+/assets
+/backup
 /cache
 /images
 /logs/*
-/assets
+/system
+/vendor

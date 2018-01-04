@@ -1,5 +1,7 @@
 ---
 title: Контакты
+markdown:    
+    auto_line_breaks: true
 ---
 
 # Контактная информация
@@ -7,7 +9,8 @@ title: Контакты
 ## Адрес:
 Россия, Крым, г. Евпатория, пгт. Заозерное, ул. Аллея Дружбы, 66
 
-##Телефоны
+##Телефоны:
+Звонки принимаются в будние дни с 08:00 до 17:00
 + Бронирование:
  - [Стационарный: 8 (36569) 2-12-71](tel:83656921271)
  - [Мобильный: 8 (978) 404-30-00](tel:89784043000)
@@ -15,6 +18,8 @@ title: Контакты
 
 + Электронная почта: [severny.80@mail.ru](mailto:severny.80@mail.ru)
 + Группа Вконтакте: [vk.com/public63954403](https://vk.com/public63954403?target=_blank)
++ Группа в Одноклассниках: [ok.ru/group/52979302203619](https://ok.ru/group/52979302203619?target=_blank)
+
 
 
 <div class="yandex-map"    style="width: 800px; height: 620px; background-image: url(contacts/map-background.jpg);    ">

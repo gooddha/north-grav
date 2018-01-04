@@ -2,13 +2,13 @@ body {
   font-family: century;
   color: lemonchiffon;
   text-shadow: 1px 1px 1px black;
-  background-color: darkseagreen;
+  /* background-color: darkseagreen;
   background-color: #48395d;
-  background-color: #4abee091;
+  background-color: #4abee091; */
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to top, #3e55ff52, #275796);
+  background-image: linear-gradient(to top, #99c9ff, #275796);
   background-size: cover;
 }
 
@@ -20,7 +20,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-image: linear-gradient(to bottom, #ce90c93d, #0b2b3a);
+  background-image: linear-gradient(to bottom, #3769b1, #0b2b3a);
   box-shadow: 0 0 20px black;
   z-index: 10;
   display: flex;
@@ -178,9 +178,8 @@ main {
   position: relative;
   max-width: 800px;
   margin: 20px auto;
-  text-align: center;
-  background-color: #16674d;
-  background-color: #1a315deb;
+  /* background-color: #16674d;
+  background-color: #1a315deb; */
   background: linear-gradient(to top, #1e3a6dd9, #5087d0);
   border-radius: 15px;
   box-shadow: 0 0 110px #00000085;
@@ -193,9 +192,14 @@ main ul {
   font-size: 24px;
 }
 
+.home-page p {
+  text-align: center;
+}
+
 .logo {
   filter: drop-shadow(0 0 136px white);
   filter: drop-shadow(0 0 4px white);
+  width: 400px;
 }
 
 .title {
@@ -310,6 +314,32 @@ main {
   font-size: 20px;
   text-align: center;
   margin: 10px 0;
+}
+
+
+.medical-services {
+  display: none;
+  border: 1px dotted white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.medical-services li {
+  font-size: 18px;
+}
+
+.medical-services ul {
+  display: none;
+}
+
+.medical-services p {
+  border-bottom: 1px dotted white;
+  padding: 5px 0;
+}
+
+.medical-services p:hover {
+  cursor: pointer;
+  color:
 }
 
 .bottom-pano {
