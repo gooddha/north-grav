@@ -4,6 +4,7 @@ menu: Комфорт
 twig_first: true
 process:
     twig: true
+icon: 'starfull.png'
 ---
 
 # Номера категории "Комфорт"

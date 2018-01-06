@@ -12,7 +12,10 @@ process:
 <ul class="rooms-cats">
     {% for post in page.children %}
         <li class="children">
-            <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+          <a href="{{ post.url }}">
+            <img src="{{ post.url }}/{{ post.header.icon }}">
+            <strong>{{ post.title }}</strong>
+          </a>
         </li>
     {% endfor %}
 </ul>

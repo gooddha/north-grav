@@ -4,6 +4,7 @@ menu: Стандарт
 twig_first: true
 process:
     twig: true
+icon: 'starempty.png'
 ---
 
 # Номера категории "Стандарт"

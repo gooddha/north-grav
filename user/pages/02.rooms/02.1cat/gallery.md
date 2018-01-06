@@ -4,6 +4,7 @@ menu: 1 категория
 twig_first: true
 process:
     twig: true
+icon: 'starhalffull.png'
 ---
 
 # Номер первой категории

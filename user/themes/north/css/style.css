@@ -17,7 +17,14 @@ a {
 }
 
 li {
-  font-size: 18px;
+  font-size: 20px;
+}
+ul > li {
+  /* padding: 10px 0; */
+}
+
+ol ul li {
+  padding: 0;
 }
 
 header {
@@ -73,6 +80,7 @@ nav ul {
 nav li {
   float: left;
   position: relative;
+  font-size: 16px;
 }
 
 ul.menu a {
@@ -100,6 +108,7 @@ ul.submenu {
   left: 0;
   background-color: #2c55a0;
   box-shadow: 0 5px 10px #00000088;
+  z-index: 10;
 }
 
 ul.submenu > li {
@@ -140,6 +149,10 @@ nav ul:after {
 
 .menu .selected {
   border-bottom: 1px solid white;
+}
+
+.menu > .selected > a {
+  height: 17px;
 }
 
 .order-btn {
@@ -256,12 +269,29 @@ p img {
 }
 
 .rooms-cats {
-  width: 375px;
+  /* width: 375px; */
+  /* display: block;
+  margin: 0 auto; */
+  list-style: none;
+  padding: 0;
+}
+
+.rooms-cats li {
+  /* width: 30%;
+  float: left;
+  margin-right: 20px;*/
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.rooms-cats img {
+  width: 50%;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .rooms-cats a {
+  text-decoration: none;
   color: inherit;
 }
 
@@ -277,13 +307,15 @@ p img {
   transition: transform 0.3s;
 }
 
-.docs-items {
+.docs-items,
+.rooms-cats {
   display: flex;
   justify-content: space-around;
   padding-bottom: 25px;
 }
 
-.docs-item {
+.docs-item,
+.rooms-cats li {
   display: flex;
   flex-direction: column;
   width: 240px;
@@ -291,8 +323,8 @@ p img {
   border-radius: 5px;
 }
 
-.docs-item:hover {
-  color: black;
+.docs-item:hover,
+.rooms-cats li:hover {
   transition: 0.4s;
   background-color: inherit;
   background: linear-gradient(to top, #2c4b85, #5f99e3);
