@@ -1,0 +1,12 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block bottom %}
+    {% do assets.addJs('theme://js/slider.js', {'priority':99, 'group':'bottom'}) %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    {% for module in page.collection() %}
+        {{ module.content }}
+    {% endfor %}
+{% endblock %}

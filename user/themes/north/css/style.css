@@ -197,6 +197,32 @@ main {
   text-align: center;
 }
 
+.home-page main {
+  max-width: 1024px;
+}
+
+#slider p {
+  height: 338px;
+  position: relative;
+  text-align: left !important;
+
+}
+
+#slider img {
+  width: 100%;
+  box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+#slider .showed {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
 main ul {
   text-align: left;
 }
