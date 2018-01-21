@@ -42,7 +42,7 @@ function Slider(selectors) {
         this.images[this.i].classList.add('showed');
     }
 
-    setInterval(function() { self.next() }, 3000);
+    setInterval(function() { self.next() }, 5000);
 
 
     // this.btn_prev.onclick = function(){

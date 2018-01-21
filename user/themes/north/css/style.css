@@ -215,12 +215,12 @@ main {
   position: absolute;
   left: 0;
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 3s;
 }
 
 #slider .showed {
   opacity: 1;
-  transition: opacity 2s;
+  transition: opacity 3s;
 }
 
 main ul {
