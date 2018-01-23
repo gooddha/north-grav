@@ -233,6 +233,7 @@ main {
 }
 
 .advantages > ul > li {
+  min-width: 230px;
   width: 20%;
   min-height: 150px;
   border: 1px solid gray;
@@ -240,13 +241,23 @@ main {
   margin: 10px;
   font-size: 20px;
   padding: 10px;
-  vertical-align: top;
+  vertical-align: middle;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.advantages > ul > li:hover {
+  box-shadow: 0 0 15px rgba(1, 1, 1, 0.4);
+  border-color: transparent;
+  transition: 0.5s;
+  background-color: #3f6db1;
 }
 
 .advantages h4 {
   margin-top: 5px;
   margin-bottom: 10px;
-
+  border-bottom: 1px solid gray;
+  padding-bottom: 14px;
 }
 
 .advantages li {
