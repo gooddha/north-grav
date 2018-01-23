@@ -12,6 +12,7 @@ content:
         custom:
             - _header
             - _slider
-            - _features
+            - _advantages
+            - _about
 body_classes: home-page
 ---
