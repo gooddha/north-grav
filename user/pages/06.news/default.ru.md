@@ -1,8 +1,11 @@
 ---
 title: Новости
-twig_first: true
 process:
+    markdown: true
     twig: true
+twig_first: true
+routable: false
+visible: false
 ---
 
 # Новости

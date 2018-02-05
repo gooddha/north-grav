@@ -1,5 +1,8 @@
 ---
 title: 'Новогодние праздники 2018'
+published: false
+routable: false
+visible: false
 ---
 
 # Новогодние праздники в ОЛЦ-пансионате «Северный»
