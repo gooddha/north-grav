@@ -159,12 +159,12 @@ nav ul:after {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: fixed;
   z-index: 1;
 }
 
 .order-container {
-  background: #aaaaaa;
+  background: #626175;
   min-height: 400px;
   width: 600px;
   position: absolute;
@@ -178,35 +178,68 @@ nav ul:after {
   padding: 20px 40px;
 }
 
-.order-container form {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-
-  height: 123px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  width: 80%;
-  margin: 0 auto;
+.order p {
+  text-align: center;
 }
 
-.order-container input {
-  width: 75%;
+.order form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.order .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.order select {
+  width: 61%;
   color: black;
 }
 
+.order input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+.order input[type="text"], input[type="date"] {
+  width: 60%;
+  color: black;
+}
+
+.input-message label {
+  text-align: left;
+}
+
+textarea {
+  width: 64%;
+  color: black;
+}
+
+.order .input-additions {
+  justify-content: space-around;
+}
+
+.order .input-additions label {
+  display: flex;
+  align-items: center;
+}
+
 .order input[type="submit"] {
+  margin: 0 auto;
   margin-top: 20px;
 }
 
-.order-container label {
-  margin: 10px 0;
-  display: flex;
+.order label {
+  /* margin: 10px 0; */
+  /* display: flex;
   justify-content: space-between;
-  text-align: left;
+  text-align: left; */
 }
 
 .order-btn {

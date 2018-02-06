@@ -4,13 +4,41 @@
 
       <div class="order-container">
         <h1>Оформите заявку на бронирование</h1>
-        <p>Заполните поля и отправьте нам заявку на бронирование номера</p>
+        <p>Заполните форму ниже <br> и отправьте нам заявку на бронирование номера:</p>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label>Имя<input type="text" name="name" important></label>
-          <label>Телефон<input type="text" name="phone"></label>
-          <label>Категория номера<input type="text" name="category"></label>
-          <label>Дата заселения<input type="date" name="begin"></label>
-          <label>Дата выселения<input type="date" name="end"></label>
+          <div class="input input-name">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="input input-phone">
+              <label for="phone">Телефон</label>
+              <input type="text" id="phone" name="phone" required>
+          </div>
+          <div class="input input-category">
+              <label for="category">Категория номера</label>
+              <select name="category" id="category">
+                <option value="Standart">Стандарт</option>
+                <option value="1category">1 категория</option>
+                <option value="Comfort">Комфорт</option>
+              </select>
+          </div>
+          <div class="input input-additions">
+            <label><input type="checkbox">Одноместное заселение</label>
+            <label><input type="checkbox">Лечение</label>
+          </div>
+          <div class="input input-begin">
+            <label for="begin">Дата заселения</label>
+            <input type="date" value="{{ "now"|date("Y-m-d") }}" id="begin"name="begin" required>
+          </div>
+          <div class="input input-end">
+            <label for="end">Дата выселения</label>
+            <input type="date" id="end" value="{{ "tomorrow"|date("Y-m-d") }}" name="end" required>
+          </div>
+          <div class="input input-message">
+            <label for="message">Дополнительная информация</label>
+            <textarea name="message" rows="8" cols="80">Впишите сюда ваши пожелания или любую другую интересующую информацию</textarea>
+          </div>
+          <p>Ориентировочная стоимость:</p>
           <input type="submit"></input>
         </form>
       </div>
