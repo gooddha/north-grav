@@ -3,8 +3,9 @@
   <section class="order">
 
       <div class="order-container">
+        <button id="close">X</button>
         <h1>Оформите заявку на бронирование</h1>
-        <p>Заполните форму ниже <br> и отправьте нам заявку на бронирование номера:</p>
+        <p>Заполните форму <br> и отправьте нам заявку на бронирование номера:</p>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="input input-name">
             <label for="name">Имя</label>
@@ -23,22 +24,36 @@
               </select>
           </div>
           <div class="input input-additions">
-            <label><input type="checkbox">Одноместное заселение</label>
-            <label><input type="checkbox">Лечение</label>
+            <label><input type="checkbox" name="single">Одноместное заселение</label>
+            <label><input type="checkbox" name="medical" checked>Лечение</label>
           </div>
           <div class="input input-begin">
             <label for="begin">Дата заселения</label>
-            <input type="date" value="{{ "now"|date("Y-m-d") }}" id="begin"name="begin" required>
+            <input type="date"
+              value="{{ "now"|date("Y-m-d") }}"
+              min="{{ "now"|date("Y-m-d") }}"
+              max="2018-12-31"
+              id="begin"
+              name="begin" required>
           </div>
           <div class="input input-end">
             <label for="end">Дата выселения</label>
-            <input type="date" id="end" value="{{ "tomorrow"|date("Y-m-d") }}" name="end" required>
+            <input type="date"
+              id="end"
+              value="{{ "tomorrow"|date("Y-m-d") }}"
+              min="{{ "tomorrow"|date("Y-m-d") }}"
+              max="2018-12-31"
+              name="end" required>
           </div>
           <div class="input input-message">
             <label for="message">Дополнительная информация</label>
             <textarea name="message" rows="8" cols="80">Впишите сюда ваши пожелания или любую другую интересующую информацию</textarea>
           </div>
-          <p>Ориентировочная стоимость:</p>
+          <div class="cost">
+            <p>Ориентировочная стоимость:</p>
+            <p>8354 руб.</p>
+          </div>
+
           <input type="submit"></input>
         </form>
       </div>

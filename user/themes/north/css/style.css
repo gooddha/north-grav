@@ -161,6 +161,7 @@ nav ul:after {
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   z-index: 1;
+  display: none;
 }
 
 .order-container {
@@ -176,6 +177,27 @@ nav ul:after {
   border-radius: 15px;
   text-align: center;
   padding: 20px 40px;
+}
+
+.order #close {
+  color: black;
+  background-color: #797979;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 30%;
+  border-color: transparent;
+}
+
+.order #close:hover {
+  background-color: #a9a9a9;
+}
+
+.order #close:before {
+  width: 10px;
+  height: 10px;
+  border-color: white;
+  display: block;
 }
 
 .order p {
@@ -233,6 +255,7 @@ textarea {
 .order input[type="submit"] {
   margin: 0 auto;
   margin-top: 20px;
+  color: black;
 }
 
 .order label {
@@ -244,12 +267,21 @@ textarea {
 
 .order-btn {
   position: absolute;
+  opacity: 0.7;
   left: 50%;
-  top: 38px;
+  top: 50px;
   transform: translateX(-50%);
-  border: 1px solid white;
-  padding: 20px;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px;
   background: green;
+  background-image: linear-gradient(to bottom, #148e2e, #21363a);
+  transition: opacity 0.3s;
+}
+
+.order-btn:hover {
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 .vignette {
