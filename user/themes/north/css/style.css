@@ -189,6 +189,18 @@ nav ul:after {
   border-color: transparent;
 }
 
+.order-hide {
+  transform: translateY(1000px);
+  transition: 1s;
+}
+
+.order-show {
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+
+
+
 .order #close:hover {
   background-color: #a9a9a9;
 }

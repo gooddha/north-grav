@@ -2,18 +2,18 @@
 
   <section class="order">
 
-      <div class="order-container">
+      <div class="order-container order-hide">
         <button id="close">X</button>
         <h1>Оформите заявку на бронирование</h1>
         <p>Заполните форму <br> и отправьте нам заявку на бронирование номера:</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form action="http://localhost/order.php" method="post">
           <div class="input input-name">
             <label for="name">Имя</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="Как к Вам обращаться" required>
           </div>
           <div class="input input-phone">
-              <label for="phone">Телефон</label>
-              <input type="text" id="phone" name="phone" required>
+              <label for="phone">Телефон / e-mail</label>
+              <input type="text" id="phone" name="phone" placeholder="Как с Вами связаться" required>
           </div>
           <div class="input input-category">
               <label for="category">Категория номера</label>
@@ -24,7 +24,7 @@
               </select>
           </div>
           <div class="input input-additions">
-            <label><input type="checkbox" name="single">Одноместное заселение</label>
+            <label><input type="checkbox" name="singleperson">Одноместное размещение в номере</label>
             <label><input type="checkbox" name="medical" checked>Лечение</label>
           </div>
           <div class="input input-begin">
@@ -46,8 +46,8 @@
               name="end" required>
           </div>
           <div class="input input-message">
-            <label for="message">Дополнительная информация</label>
-            <textarea name="message" rows="8" cols="80">Впишите сюда ваши пожелания или любую другую интересующую информацию</textarea>
+            <label for="additional_info">Дополнительная информация</label>
+            <textarea id="additional_info" name="additional_info" rows="8" cols="80" placeholder="Впишите сюда ваши пожелания или любую другую интересующую информацию"></textarea>
           </div>
           <div class="cost">
             <p>Ориентировочная стоимость:</p>
