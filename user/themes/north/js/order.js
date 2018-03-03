@@ -5,6 +5,7 @@ let stateCheck = setInterval(() => {
     var orderContainer = document.querySelector('.order-container');
     var orderForm = document.querySelector('.order');
     var closeBtn = document.querySelector('#close');
+    var okBtn = document.querySelector('.ok-button');
 
     orderBtn.onclick = function() {
       console.log('show order');
@@ -21,8 +22,31 @@ let stateCheck = setInterval(() => {
       orderBtn.style.display = "block";
       orderForm.style.display = "none";
     }
-    
+
+    okBtn.onclick = function() {
+      console.log('hide order-confirm');
+      orderBtn.style.display = "none";
+      orderForm.style.display = "none";
+    }
+
     clearInterval(stateCheck);
+
+    //AJAX отправка формы
+    var form = document.querySelector(".order-container");
+    var order = document.querySelector(".order-confirm");
+
+    	$(".order-form").submit(function() {
+    		$.ajax({
+    			type: "POST",
+    			url: "order.php",
+    			data: $(this).serialize()
+    		}).done(function() {
+    			$(this).find("input").val("");
+    			form.classList.add("hidden");
+    			order.classList.remove("hidden");
+    		});
+    		return false; //preventDefault alternative
+    	});
   }
 
 }, 100);

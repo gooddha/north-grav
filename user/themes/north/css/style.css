@@ -67,6 +67,10 @@ header {
   text-align: right;
 }
 
+header .clouds {
+  /* background-image: url('../../../images/clouds.png'); */
+}
+
 nav {
   display: flex;
 }
@@ -296,6 +300,39 @@ textarea {
   transition: opacity 0.3s;
 }
 
+.order-confirm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  width: 60%;
+  color: seagreen;
+  overflow: hidden;
+  margin:0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 30px rgba(77, 77, 77, 0.64);
+  letter-spacing: 0;
+  background: rgb(255, 249, 194);
+  border: 1px dashed black;
+}
+
+.order-confirm h2 {
+  text-align:  center;
+  font-size: 3em;
+}
+
+.order-confirm .wrapper {
+  padding: 10px;
+}
+
+.order-confirm .ok-button {
+  display: block;
+  margin: 20px auto;
+  width: 80px;
+}
+
+
 .vignette {
   position: fixed;
   /* to prevent empty space around the vignette */
@@ -332,11 +369,10 @@ main {
   max-width: 1024px;
 }
 
-#slider p {
-  height: 338px;
+#slider {
+  height: 297px;
   position: relative;
   text-align: left !important;
-
 }
 
 #slider img {
@@ -352,6 +388,10 @@ main {
 #slider .showed {
   opacity: 1;
   transition: opacity 3s;
+}
+
+.advantages h2 {
+  margin-top: 30px;
 }
 
 .advantages ul {

@@ -6,7 +6,7 @@
         <button id="close">X</button>
         <h1>Оформите заявку на бронирование</h1>
         <p>Заполните форму <br> и отправьте нам заявку на бронирование номера:</p>
-        <form action="http://localhost/order.php" method="post">
+        <form class="order-form" action="http://localhost/north/order.php" method="post">
           <div class="input input-name">
             <label for="name">Имя</label>
             <input type="text" id="name" name="name" placeholder="Как к Вам обращаться" required>
@@ -54,8 +54,15 @@
             <p>8354 руб.</p>
           </div> -->
 
-          <input type="submit"></input>
+          <input type="submit" class="form-button"></input>
         </form>
+      </div>
+
+      <div class="order-confirm hidden" id="order">
+        <h2 class="order-confirm-head is-center">Спасибо за заказ!</h2>
+        <p class="order-confirm-text">В ближайшее время мы с вами свяжемся</p>
+        <button type="button" class="ok-button">X</button>
+        <!-- <h2><i class="fa fa-check-circle"></i></h2> -->
       </div>
 
   </section>
