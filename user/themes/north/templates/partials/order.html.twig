@@ -1,4 +1,4 @@
-{% block order %}
+﻿{% block order %}
 
   <section class="order">
 
@@ -6,7 +6,7 @@
         <button id="close">X</button>
         <h1>Оформите заявку на бронирование</h1>
         <p>Заполните форму <br> и отправьте нам заявку на бронирование номера:</p>
-        <form class="order-form" action="http://localhost/north/order.php" method="post">
+        <form class="order-form" action="http://олц-северный.рф/order.php" method="post">
           <div class="input input-name">
             <label for="name">Имя</label>
             <input type="text" id="name" name="name" placeholder="Как к Вам обращаться" required>
@@ -49,10 +49,7 @@
             <label for="additional_info">Дополнительная информация</label>
             <textarea id="additional_info" name="additional_info" rows="8" cols="80" placeholder="Впишите сюда ваши пожелания или любую другую интересующую информацию"></textarea>
           </div>
-          <!-- <div class="cost">
-            <p>Ориентировочная стоимость:</p>
-            <p>8354 руб.</p>
-          </div> -->
+
 
           <input type="submit" class="form-button"></input>
         </form>

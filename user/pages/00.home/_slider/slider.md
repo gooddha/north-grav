@@ -1,12 +1,12 @@
 ---
 twig_first: true
 process:
-    markdown: false
     twig: true
+    markdown: false
 ---
 
-<div id="slider">  
-    {% for image in page.media.images %}      
-    {{ image }}
-    {% endfor %}  
+<div id="slider" markdown="1">  
+  {% for image in page.media.images %}      
+  {{ image }}
+  {% endfor %}
 </div>

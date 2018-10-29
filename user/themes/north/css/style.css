@@ -1,5 +1,5 @@
 body {
-  font-family: century;
+  font-family: serif;
   color: lemonchiffon;
   text-shadow: 1px 1px 1px black;
   /* background-color: darkseagreen;
@@ -229,6 +229,28 @@ nav ul:after {
   justify-content: space-between;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  /*align-items: flex-start;*/
+}
+
+.form-container .input {  
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.form-container .input input,
+.form-container .input textarea {  
+  flex-basis: 50%;
+}
+
+input[type="submit"] {
+  margin-top: 30px;
+  background-color: #2d3e86;
+}
+
 .order .input {
   display: flex;
   justify-content: space-between;
@@ -245,17 +267,25 @@ nav ul:after {
   margin-right: 15px;
 }
 
-.order input[type="text"], input[type="date"] {
-  width: 60%;
+input[type="text"], input[type="date"] {
+  /*width: 60%;*/
   color: black;
 }
 
+.input label {
+  display: inline-block;
+  /*width: 200px;*/
+  flex-basis: 33%;
+  text-align: right; 
+  margin-right: 14px;
+}
+
 .input-message label {
-  text-align: left;
+   
 }
 
 textarea {
-  width: 64%;
+  /*width: 64%;*/
   color: black;
 }
 
@@ -268,9 +298,9 @@ textarea {
   align-items: center;
 }
 
-.order input[type="submit"] {
+.order .form-button {
   margin: 0 auto;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: black;
 }
 
@@ -549,7 +579,7 @@ p img {
 
 .docs-items,
 .rooms-cats {
-  display: flex;
+  /*display: flex;*/
   justify-content: space-around;
   padding-bottom: 25px;
 }
@@ -558,18 +588,19 @@ p img {
 .rooms-cats li {
   display: flex;
   flex-direction: column;
-  width: 240px;
-  transition: 0.4s;
+  /*width: 240px;*/
+  transition: 0.1s;
   border-radius: 5px;
 }
 
 .docs-item:hover,
 .rooms-cats li:hover {
-  transition: 0.4s;
-  background-color: inherit;
-  background: linear-gradient(to top, #2c4b85, #5f99e3);
-  transform: scale(1.1);
-  box-shadow: 0 0 80px #00000085;
+  transition: 0.1s;
+  background-color: #194380;
+  /*background: linear-gradient(to top, #2c4b85, #5f99e3);*/
+  /*transform: scale(1.1);*/
+  box-shadow: 0 0 30px #000000aa;  
+  text-color: white;
 }
 
 .docs-item:active {
@@ -579,25 +610,32 @@ p img {
 }
 
 .docs-item a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  padding: 20px 10px 0 10px;
+  padding: 20px 10px 20px 10px;
 }
 
 .docs-item a:hover {
   color: black;
 }
 
+.docs-item a img {
+  min-width: 150px;
+  height: 210px;
+} 
+
 .docs-item p {
-  color: lightgray;
+  color: white;
   transition: color 0.3s;
-  font-size: 20px;
-  text-align: center;
-  margin: 10px 0;
+  font-size: 30px;
+  /*text-align: center;*/
+  margin: 10px 40px;
 }
 
 
 .medical-services {
-  display: none;
+  display: block;
   border: 1px dotted white;
   border-radius: 15px;
   padding: 10px;

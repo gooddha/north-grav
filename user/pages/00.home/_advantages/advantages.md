@@ -4,10 +4,8 @@ process:
     twig: true
 ---
 
-
-<div class="advantages" markdown="1">
 ##Наши преимущества:
-
+<div class="advantages" markdown="1">
 - ####Медицина
  - Уникальное сочетание целебных возмож&shy;ностей природы и высоко&shy;квалифици&shy;рованного персонала
 - ####Номерной фонд

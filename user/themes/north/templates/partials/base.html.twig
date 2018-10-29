@@ -1,4 +1,4 @@
-{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+﻿{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
 <head>
@@ -37,6 +37,38 @@
 
 {% endblock %}
 
+<div class="widget5" 
+    style="
+        box-shadow: 0 0 15px #333;
+        position: fixed;
+        top: 50vh;
+        transform: translateY(-50%);
+        z-index: 1;
+        text-shadow: none;
+        right: 0;
+    ">
+    </div>
+    
+ <script>
+    (function (d, s) {
+ 
+        var js, fjs = d.getElementsByTagName(s)[0];
+        js = d.createElement(s);
+        js.src = "https://widgets.mos.ru/cnews/citywidgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+ 
+        var i = setInterval(function () {
+            if (window.city_widget && document.readyState === "complete") {
+                city_widget('240x400', '.widget5');
+                clearInterval(i);
+            }
+        }, 50);
+        setTimeout(function () {
+            clearInterval(i)
+        }, 5000);
+    }(document, 'script'));
+</script>
+
 {% block body %}
 
     <div class="wrapper">
@@ -46,6 +78,36 @@
     </div>
 
 {% endblock %}
+
+{#
+<div class="widget3"
+    style="
+        margin-top: -50px;
+        text-shadow: none;        
+    ">
+        </div>
+    
+ <script>
+    (function (d, s) {
+ 
+        var js, fjs = d.getElementsByTagName(s)[0];
+        js = d.createElement(s);
+        js.src = "https://widgets.mos.ru/cnews/citywidgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+ 
+        var i = setInterval(function () {
+            if (window.city_widget && document.readyState === "complete") {
+                city_widget('650x200', '.widget3');
+                clearInterval(i);
+            }
+        }, 50);
+        setTimeout(function () {
+            clearInterval(i)
+        }, 5000);
+    }(document, 'script'));
+</script>
+#}
+
 
 {% block footer %}
     <footer>

@@ -12,7 +12,6 @@ content:
         custom:
             - _header
             - _slider
-            - _order
             - _advantages
             - _about
 body_classes: home-page

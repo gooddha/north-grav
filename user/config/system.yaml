@@ -91,10 +91,10 @@ twig:
   undefined_filters: true
   umask_fix: false
 assets:
-  css_pipeline: true
+  css_pipeline: false
   css_pipeline_include_externals: true
   css_pipeline_before_excludes: true
-  css_minify: true
+  css_minify: false
   css_minify_windows: false
   css_rewrite: true
   js_pipeline: false
@@ -121,7 +121,7 @@ images:
 media:
   enable_media_timestamp: false
   auto_metadata_exif: false
-  upload_limit: 2097152
+  upload_limit: 33554432
 session:
   enabled: true
   timeout: 1800

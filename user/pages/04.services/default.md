@@ -13,7 +13,7 @@ process:
     {% for post in page.children %}
         <li class="children">
           <a href="{{ post.url }}">
-            <img src="{{ post.url }}/{{ post.header.icon }}">
+            {# <img src="{{ post.url }}/{{ post.header.icon }}"> #}
             <strong>{{ post.title }}</strong>
           </a>
         </li>
